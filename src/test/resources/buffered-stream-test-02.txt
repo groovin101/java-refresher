@@ -1,0 +1,4 @@
+1 buffered
+2 stream
+3 test
+4 EOF
