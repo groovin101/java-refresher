@@ -1,0 +1,1 @@
+and text from the file named [add-to-zip-02.txt]
