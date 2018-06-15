@@ -16,6 +16,15 @@ public class StringJoinerTest {
     public void setup() {
 
     }
+    @Test
+    public void x() {
+        int i = 10;
+        int j = 10;
+        int before = ++i;
+        System.out.println("before = " + before + " and orig = " + i);
+        int after = j++;
+        System.out.println("after = " + after + " and orig = " + j);
+    }
 
     @Test
     public void delimiter() {

@@ -1,37 +1,25 @@
 package com.groovin101.refresher;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.Test;
 
 /**
  * Unit test for simple App.
  */
-public class AppTest extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
+public class AppTest {
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
+    @Test
+    public void riverTest() {
+        Integer i = 0;
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
+        while (i < 1000) {
+            if (i%3==0) {
+                int totalFromEachNum = 0;
+                for (int charIndex=0;charIndex<i.toString().length();charIndex++) {
+                    totalFromEachNum += new Integer(i.toString().substring(charIndex,charIndex+1));
+                }
+                System.out.println("["+i+"]\t\t"+totalFromEachNum);
+            }
+            i++;
+        }
     }
 }
